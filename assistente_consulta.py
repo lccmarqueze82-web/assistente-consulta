@@ -47,7 +47,7 @@ with colC:
 
 def gpt_reply(role, text):
     response = client.chat.completions.create(
-        model="gpt-5-turbo",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": role},
             {"role": "user", "content": text},
